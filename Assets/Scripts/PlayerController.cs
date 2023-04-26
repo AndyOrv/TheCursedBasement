@@ -204,7 +204,7 @@ public class PlayerController : MonoBehaviour
 
             if (isDead)
             {
-                ellipse.GetComponent<GameObject>();
+                FindObjectOfType<GameManager>().ReloadScene();
                 deathScreen.SetActive(false);
             }
         }
